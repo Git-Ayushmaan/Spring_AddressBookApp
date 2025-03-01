@@ -15,8 +15,13 @@ public class AddressBookService {
     public AddressBookDTO addEntry(String name) {
         AddressBookDTO entry = new AddressBookDTO(idCounter++, name);
         addressList.add(entry);
-        log.info("Added new entry: {}", entry);
+        log.info("Added new entry: {}", entry); // Ensure logging is working
         return entry;
+    }
+
+    public List<AddressBookDTO> getAllEntries() {
+        log.info("Fetching all entries");
+        return addressList;
     }
 
     public AddressBookDTO getEntryById(Long id) {

@@ -1,4 +1,4 @@
-package com.bridgelabz.springaddressbookapplication;
+package com.bridgelabz.springaddressbookapplication.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
